@@ -1,0 +1,16 @@
+﻿# Pocket Wilds - what is new
+
+## [4.0.0] - 2026-10-22  -  Pocket Wilds
+- New name: **Pocket Wilds** (was CYD Ranger), by tee & claude. Title screen shows the six final
+  forms with the wild monsters of the world in front
+- Every monster form has real stand / walk / attack pictures (12 forms); the attack also fires
+  an element shot (fire ball, water drop, leaf blade) with an element hit on the enemy
+- Scrolling scenes: all 10 chapters are 3-part looping landscapes; after each win the pet walks
+  on (steps follow the ground) and the next enemy comes in with the scene
+- Beaten enemies vanish in a puff of white smoke; anime emotes over the pet (note, sweat, anger)
+- Quest bar sized to its text
+- Bigger game partition (partitions_cyd.csv); updating with "keep my save" keeps the save
+- Painted sprites stored compressed (RLE); tools/cutout.py removes painted checkerboards
+- **Fix: "Flash - keep my save" really keeps the save now.** The full image has blank 0xFF over
+  the save area (0x9000-0xDFFF), so writing it at 0x0 wiped the save in every earlier package.
+  Option 1 now writes update/boot_0x0.bin and update/game_0xe000.bin around the save (tested)
