@@ -1,5 +1,38 @@
 ﻿# Pocket Wilds - what is new
 
+## [4.1.0] - 2026-10-22  -  bag, gems, quests, Arena challenge
+- **Arena: challenges are asked first.** Tapping a friend sends a request; the friend gets a
+  CHALLENGE! popup on any page (name, monster, level, ATK, HP, 15 s) and taps FIGHT! to start
+  right away, or NO. Boards on 4.0.0 do not see this version (rules changed)
+- Battle page: blinking red "!" on each row with something to do (friends nearby, Boss Rush
+  ready, Tower not tried yet); the Arena row shows how many friends are near and their names
+- Fix: a friend's challenge while on another page fought out of sight; it now goes HOME
+- **Refine stones only come from tapping the flying stone.** Check-in, quests and SALVAGE no
+  longer give any (quests pay gold instead, SALVAGE pays gold); USB log prints every change
+- Quests start with upgrades: ATK to 3 (sword), DEF to 3 (armor), speed to 3 (gloves), then
+  equip, then the stage quests. A quest finished on the UPGRADE / BAG page goes back HOME and
+  shows the reward at once
+- **One kind of gem** (old grade III values): drops are shards, 9 shards make a gem by themselves.
+  Gems page shows a shard bar per kind; the socket page lists only what you have (gems, then cards).
+  SOCKET + button in the bag when the picked item has an empty slot; item details list all slot bonuses.
+  Starter kit has one slot; the Lv10 quest gives an ATK gem and walks you through socketing it.
+  Socket page shows the item and all its slots on top (the one being filled blinks; tap another
+  slot to switch) and what the slots add.
+  Old saves: grade I = 1 shard, II = 3 shards, III = 1 gem; small gems in items come back as shards
+- **New bag**: 12 places each for swords, armor and gloves (4 x 3 under each worn slot), sorted by
+  frame colour then strength. When a block is full the weakest unlocked item is sold for gold.
+  LOCK / UNLOCK button; refined or socketed items lock themselves; locked items cannot be salvaged.
+  Green arrow on items stronger than the worn one. Old saves: the 30-place bag is sorted into the blocks
+- Tower reminder ("!"): before the first run, then again only once the pet is 20% stronger
+  (ATK x HP) than at the start of the last run
+- Check-in day 1 pays at least 1,000 gold: enough for ATK, DEF and speed to Lv3
+- Quest chain: wear all 3 starter items, then catch a flying stone (one keeps flying round until
+  it is caught, then the BAG shows how to refine), then refine one item to +1. After that stones
+  come on the usual clock. Kill quests count from when the quest shows up. One Tower quest after
+  stage 5 and one Boss Rush quest when it unlocks; no Arena quests (it needs a second board)
+- Flying stones only come once the player owns an item
+- The word on screen is "slot"; item details sum the same bonuses (two ATK gems = +50ATK)
+
 ## [4.0.0] - 2026-10-22  -  Pocket Wilds
 - New name: **Pocket Wilds** (was CYD Ranger), by tee & claude. Title screen shows the six final
   forms with the wild monsters of the world in front
